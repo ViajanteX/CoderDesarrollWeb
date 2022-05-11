@@ -1,0 +1,26 @@
+.Header {
+  text-align: center;
+  padding-bottom: 3px;
+  padding-top: 20px;
+  background-color: crimson;
+}
+
+.Header__title {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-bottom: 10px;
+}
+
+.Espaciado {
+  margin-top: 50px;
+}
+
+.Footer {
+  background-color: gray;
+  display:  flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+/*# sourceMappingURL=estilos.css.map */
