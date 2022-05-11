@@ -1,0 +1,8 @@
+Mejoras de SEO
+
+META DESCRIPTION
+Eh añadido meta description a todas las paginas
+KEYWORDS
+Añadidas a cada pagina del proyecto
+IMAGENES
+Optimize gran parte de las imagenes en "https:www.iloveimg.com"
