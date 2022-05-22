@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Habla con el equipo de LA DOSIS">
+    <meta name="description" content=" suscripcion a novedades, adquirir franquicia, informacion">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../sass/estilos.css">
+    <link rel="stylesheet" href="../estilos/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+   <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid bg-secondary">
+                  <a class="navbar-brand text-danger"  href="../index.html" >Pizzeria La Dosis</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                       <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="./Catalogo.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         Catalogo
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="./Catalogo.html">Pizzas</a></li>
+                          <li><a class="dropdown-item" href="./Catalogo.html">Empanadas</a></li>
+                          <li><a class="dropdown-item" href="./Catalogo.html">Especialidades</a></li>
+                          <li><a class="dropdown-item" id="#Postres" href="./Catalogo.html">Postres</a></li>
+                        </ul>
+                      <li class="nav-item">
+                        <a class="nav-link text-light" href="./Sucursales.html">Sucursales</a>
+                      </li> <li class="nav-item">
+                        <a class="nav-link text-light" href="./QuienesSomos.html">Quienes Somos</a>
+                      </li> <li class="nav-item">
+                        <a class="nav-link text-light" href="./Contacto.html">Contacto</a>
+                      </li>            
+                  </div>
+                </div>
+              </nav>
+ </header>
+    <main class="container-fluid bg-secondary">
+        <div class="row ImgsIndex">
+            <div class="col-4">
+    <img class="ImgsIndex" width="400px" src="https://www.diariodemorelos.com/noticias/sites/default/files/field/image/franquicia.jpg" alt="">
+            </div>
+            <div class="col-4">
+               <p class="TextNegrita"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusamus obcaecati unde sint similique voluptatem veniam non ab maiores nobis corrupti optio consequuntur laborum reprehenderit doloribus magni facere, recusandae neque! </p>
+            </div>
+            <div  class="col-4">
+              <img class="ImgsIndex" width="400px" height="300px" src="https://i.pinimg.com/originals/1e/79/ee/1e79ee81499eb2a8af952e6f3d5d4f61.jpg" alt="">
+            </div>
+        </div>
+
+        <form class="BordesForm ImgsIndex" action="#" method="#">
+            <fieldset>
+                <legend>Por aca te respondemos!</legend>
+                <label  for="NombreYapellido">Tu nombre y Apellido:</label>
+                <input class="BordesForm" type="text" name="NombreYapellido" id="Name" />
+                <br /><br />
+                <label for="eMail">Tu Correo:</label>
+                <input class="BordesForm CheckMail" type="text" name="eMail" id="CorreoElectronico" />
+                <br /><br />
+                <legend>Deje su comentario:</legend>
+                <label class="BordesForm" for="comentario"></label>
+                <textarea class="BordesForm" name="comentario" id="Comment" cols="40" rows="5" placeholder="Opcional"></textarea>
+                <br /><br />
+                <label for="Razon">Los contacto Porque:</label>
+                <select class="BordesForm" name="Razon" id="#">
+                  <option value="" disabled selected>Elija Razon</option>
+                  <option value="">Deseo recibir promos semana a semana</option>
+                  <option value="">Quiero obtener una franquicia</option>
+                  <option value="">Otras razones</option>
+                  <input class="btnverde" type="submit" value="Enviar Comentario" />
+                  <input class="btngris" type="reset" value="Limpiar Formulario" />
+            </fieldset>
+        </form>
+    </main>
+    <footer class="Footer">
+        <img class="Centrarimg" src="../assets/img footer.png" width="200px" weight="200px" alt="">
+        <p>De Zona oeste pal mundo</p>
+    </footer>
+</div>
+</body>
+</html>
+

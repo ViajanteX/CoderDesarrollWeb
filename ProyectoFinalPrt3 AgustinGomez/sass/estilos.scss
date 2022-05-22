@@ -1,0 +1,129 @@
+
+$Espaciado:
+  50px;
+ $Flex:
+  flex;
+ $FlexColumn: 
+ column;
+ $Center: 
+ center;
+ $FontBold: 
+  bold;
+ $PaddingTop:
+20px;
+ $PaddingBottom:
+  20px;
+
+  /*MAPS*/
+$Paleta:(
+  ColorVerde:
+green,
+  FondoGris:
+gray,
+  ColorCrimson:
+crimson,
+ColorOliva: olivedrab
+);
+/*FIN MAPS*/
+/*NESTING*/
+.Header{ text-align: $Center;
+    padding-bottom: 3px;
+     padding-top: $PaddingTop;
+     background-color: map-get($map: $Paleta, $key:ColorCrimson);
+     
+ &__title{
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     padding-bottom: 10px;
+ }
+  }
+  /*FIN NESTING*/
+  /*MIXINS*/
+  @mixin Textbold ( $FontBold ,
+  $PaddingTop ,
+  $PaddingBottom  ){
+    font-weight: $FontBold;
+    padding-top: $PaddingTop;
+    padding-bottom: $PaddingBottom;
+  }
+  @mixin FlexCenter($Flex , $Center , $Center) {
+    display: $Flex;
+    text-align: $Center;
+    justify-content: $Center;    
+  }
+  
+  /*FIN MIXINS*/
+  .TextNegrita{
+@include Textbold(bold, 20px, 20px )
+  }
+
+  .Espaciado{
+    margin: $Espaciado;
+}
+.Footer{
+    background-color: map-get($map: $Paleta, $key:FondoGris);
+    flex-direction: $FlexColumn;
+    @extend .ImgsIndex;
+}
+ *{
+ border: 0;
+ padding: 0;
+  }
+  /* ESTILOS INDEX */
+    .H2Index{
+  
+        display: $Flex;
+        justify-content: space-between;
+        align-items: $Center;
+        font-size: xx-large;
+    }
+    .vinetaIndex{
+        border-style: double ;
+        border-width: 3px;
+        font-size:x-large;
+    }
+    .ImgsIndex {
+     @include FlexCenter(Flex, center)
+    
+    }
+    .ListAccordion{
+        display:$Flex;
+        justify-content: space-evenly;
+        font-size: larger;
+    }
+      
+  /*FIN  ESTILOS INDEX */
+  /* ESTILOS SUCURSALES*/
+  .ListUbis{
+    display: $Flex;
+    flex-direction:$FlexColumn;
+    justify-content: $Center;
+    list-style: circle;
+    padding-top: $Espaciado;
+    @include Textbold(bold, 10px , 10px );    
+  }
+  .EspaciadoBottom
+ {
+   padding-bottom: $Espaciado;
+ }
+  /*FIN ESTILOS SUCURSALES*/
+  /*ESTILOS QUIENES SOMOS*/
+  .EncNombres{
+    @include Textbold(bold, 20px , 20px );
+    @include FlexCenter (Flex, center)
+  }
+  
+  /*FIN ESTILOS QUIENES SOMOS*/
+  
+  /* ESTILOS Contacto */
+  .BordesForm{
+    border: solid 2px;
+    border-color: map-get($map: $Paleta, $key:ColorOliva );
+  }
+  .btnverde{
+    background-color:map-get($map: $Paleta, $key:ColorVerde );
+  }
+  .btngris{
+    background-color:map-get($map: $Paleta, $key:FondoGris );
+  }
+  /* FIN  ESTILOS CONTACTO*/
+  /*# sourceMappingURL=estilos.css.map */
